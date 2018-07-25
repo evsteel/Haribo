@@ -5,11 +5,11 @@ import sys
 sys.path.append('..')
 from docs.conf import market_symbols_dict, market_symbols_max_interval
 from common.Utils import InfluxDBConnector
-from binance import parse_binance_kline_json_to_influx_data, get_binance_kline_json
-from huobi import parse_huobi_kline_json_to_influx_data, get_huobi_kline_json
-from kraken import parse_kraken_kline_json_to_influx_data, get_kraken_kline_json
-from okex import parse_okex_kline_json_to_influx_data, get_okex_kline_json
-from gdax import parse_gdax_kline_json_to_influx_data, get_gdax_kline_json
+from ohlc.binance import parse_binance_kline_json_to_influx_data, get_binance_kline_json
+from ohlc.huobi import parse_huobi_kline_json_to_influx_data, get_huobi_kline_json
+from ohlc.kraken import parse_kraken_kline_json_to_influx_data, get_kraken_kline_json
+from ohlc.okex import parse_okex_kline_json_to_influx_data, get_okex_kline_json
+from ohlc.gdax import parse_gdax_kline_json_to_influx_data, get_gdax_kline_json
 
 import logging
 logger = logging.getLogger('main.haribo.main')
